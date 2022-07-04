@@ -1,6 +1,15 @@
 # XSS-Bypass-Filters
 
 ### Redirection
+```
+document.location=
+window.location=
+this["window"]["location"]=
+document.location.href=
+```
+
+### Link
+
 
 ### Cookies
 
