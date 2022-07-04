@@ -15,7 +15,7 @@ location=
 
 ```
 //google.com/?=a
-//134744072:1234/?a= = 8.8.8.8
+//134744072:1234/?a= (decimal ip)
 ```
 
 ### Cookies
