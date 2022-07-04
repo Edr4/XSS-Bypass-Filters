@@ -6,6 +6,7 @@ document.location=
 window.location=
 this["window"]["location"]=
 document.location.href=
+location.href=
 ```
 
 ### Link
