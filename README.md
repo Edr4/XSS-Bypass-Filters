@@ -29,4 +29,7 @@ doc\u0075ment['cookie']
 window["doc"+"ument"]["cookie"]
 ```
 
+### Alert
+```
 
+```
