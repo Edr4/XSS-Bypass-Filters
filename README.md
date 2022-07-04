@@ -3,6 +3,7 @@
 ### Redirection
 ```
 document.location=
+document['location']=
 window.location=
 this["window"]["location"]=
 document.location.href=
