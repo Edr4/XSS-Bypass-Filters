@@ -14,8 +14,8 @@ location=
 ### Link
 
 ```
-//google.com
-//134744072 = 8.8.8.8
+//google.com/?=a
+//134744072:1234/?a= = 8.8.8.8
 ```
 
 ### Cookies
