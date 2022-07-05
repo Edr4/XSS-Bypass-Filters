@@ -39,4 +39,10 @@ top['alert'](3)
 this['alert'](4)
 frames['alert'](5)
 content['alert'](6)
+[7].map(alert)
+[8].find(alert)
+[9].every(alert)
+[10].filter(alert)
+[11].findIndex(alert)
+[12].forEach(alert);
 ```
