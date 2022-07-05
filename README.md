@@ -31,5 +31,6 @@ window["doc"+"ument"]["cookie"]
 
 ### Alert
 ```
+alert(1)
 
 ```
