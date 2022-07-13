@@ -11,6 +11,7 @@ location.href=
 location=
 window.location.assign()
 window['location']['href']=
+document.location.replace()
 ```
 
 ### Link
