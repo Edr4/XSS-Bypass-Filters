@@ -62,6 +62,13 @@ javascript:a\u006Cert``"
 javascript:\u0061\u006C\u0065\u0072\u0074``
 ```
 
+### Email 
+```
+test+(<script>alert(0)</script>)@example.com
+test@example(<script>alert(0)</script>).com
+"<script>alert(0)</script>"@example.com
+```
+
 ### Alert
 ```
 alert(1)
