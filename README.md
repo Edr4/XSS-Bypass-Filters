@@ -71,6 +71,11 @@ javascript&#x3A;alert()
 javascript://%0Aalert(1)
 javascript://%0Dalert(1)
 
+#  target="_blank"
+- Scroll Click
+- Shift + Right Click
+- Ctrl + Right Click
+
 # alert
 javascript:alert&lpar;&rpar;
 javascript:al&#x65;rt``
