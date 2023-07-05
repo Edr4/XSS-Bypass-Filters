@@ -81,8 +81,8 @@ javascript://%0Dalert(1)
 
 #  target="_blank"
 - Scroll Click
-- Shift + Right Click
-- Ctrl + Right Click
+- Shift + Click
+- Ctrl + Click
 
 # alert
 javascript:alert&lpar;&rpar;
