@@ -169,7 +169,7 @@ location=/javascript:alert%2823%29/.source;
 </script>
 ```
 
-#### With </script Space, tab, strings, line return...
+#### With </script Space, tab, strings, line return... >
 ```js
 <script>
   var test = "</script ><svg/onload=alert(45)>"
