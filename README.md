@@ -96,6 +96,68 @@ javascript:a\u006Cert``"
 javascript:\u0061\u006C\u0065\u0072\u0074``
 ```
 
+### HTML ENTITY
+
+#### Named entities 
+https://gchq.github.io/CyberChef/#recipe=To_HTML_Entity(false,'Named%20entities')
+```
+' -> &apos;
+" -> &quot;
+` -> &grave;
+` -> &DiacriticalGrave;
+( -> &lpar;
+) -> &rpar;
+{ -> &lcub;
+} -> &rcub;
+& -> &amp;
+< -> &lt;
+> -> &gt;
+\n -> &NewLine;
+\t -> &Tab;
+nbsp -> &nbsp;
+\ -> &bsol;
+```
+#### Hex entities 
+[https://gchq.github.io/CyberChef/#recipe=To_HTML_Entity(false,'Hex%20entities')
+```
+' -> &#x27;
+" -> &#x22;
+` -> &#x60;
+( -> &#x28;
+{ -> &#x7b;
+} -> &#x7d;
+& -> &#x26;
+< -> &#x3c;
+> -> &#x3e;
+\n -> &#x0a;
+\t -> &#x09;
+nbsp -> &#xa0;
+\ -> &#x5c; 
+```
+#### Numeric entities
+https://gchq.github.io/CyberChef/#recipe=To_HTML_Entity(false,'Numeric%20entities')
+```
+' -> &#39;
+" -> &#34;
+` -> &#96;
+( -> &#40;
+) -> &#41;
+{ -> &#123;
+} -> &#125;
+& -> &#38;
+< -> &#60;
+> -> &#62;
+\n -> &#10;
+\t -> &#9;
+nbsp -> &#160;
+\ -> &#92;
+```
+#### Numeric and Hex you can add as many 0
+```
+( -> &#x28; = &#x0000028;
+( -> &#40; = &#0000000000040;
+```
+
 ### Email 
 ```html
 test+(<script>alert(0)</script>)@example.com
