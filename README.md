@@ -309,6 +309,10 @@ https://www.hahwul.com/2020/10/03/forcing-http-redirect-xss/
 
 ### Test function 
 ```js
+console.trace()
+console.error()
+console.trace``
+console.error``
 confirm?.(1)
 top.confirm?.(1)
 alert?.(1)
