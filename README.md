@@ -422,6 +422,9 @@ _http://danlec_@.1 style=background-image:url(data:image/png;base64,iVBORw0KGgoA
 ```
 ## Bypass WAF
 
+Random header bypass UA, ip ban 
+https://portswigger.net/bappstore/3a656c1be14148c6bf95642af42eb854
+
 ### Bypass Amazon 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" width="250px">
